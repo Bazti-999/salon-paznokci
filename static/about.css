@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Syne', sans-serif;
+    max-width: 100%;
+}
+
+.logo {
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+}
+
+.logo img{
+    width: 60%;
+}
+
+.header h1{
+    letter-spacing: 2;
+    font-size: 40px;
+}
+
+nav {
+    padding: 10px;
+}
+  
+.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav li {
+    width: 14.2857%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav li:nth-child(4) {
+    background-color: rgb(246, 230, 229);
+}
+
+.nav a {
+    display: block;
+    padding: 10px 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 350ms ease-in-out;
+}
+  
+.nav a:hover {
+    background-color: rgb(246, 230, 229);
+}
+
+h1 {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 250%;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+}
+
+.employes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.employe {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+
+.employe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.employee-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(246, 230, 229, 0.7);
+    padding: 5px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+.employe:hover .employee-name {
+    transform: translateY(0%); 
+}
+
+.content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.content img {
+    object-fit: contain;
+}
+
+.content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contentH2 {
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.content p:last-child {
+    margin-bottom: 0;
+}
+
+
+.footer {
+    width: 100%;
+    font-family: 'Syne', sans-serif;
+    color: black;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    height: auto;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 150%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media img {
+    width: 2.5%;
+    margin: 0 5px;
+    transition: transform 0.3s ease; 
+}
+
+.social-media img:hover {
+    cursor: pointer;
+    transform: scale(1.2); 
+}
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease; 
+    z-index: 1;
+}
+
+.scroll-to-top-btn.show {
+    display: block;
+}
+
+.scroll-to-top-btn:hover {
+    transform: scale(1.3); 
+}

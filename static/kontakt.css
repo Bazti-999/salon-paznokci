@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Syne', sans-serif;
+    max-width: 100%;
+}
+
+header {
+    background-color: transparent;
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    font-family: 'Questrial', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-content img {
+    min-width: 50px;
+    width: 20%;
+    height: auto;
+    margin-right: 15px;
+}
+
+.header-column {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-column a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.header-column a:hover{
+    cursor: pointer;
+}
+
+.header-column p {
+    margin: 0;
+    font-size: 1.08em;
+}
+  
+.hours-text {
+    line-height: 1cm;
+}
+
+.iframe {
+    margin-top: 40px;
+    display: flex;
+    width: calc(100% - 40px);
+    align-items: center;
+}
+
+.writer {
+    width: 50%;
+}
+
+.writer {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+   
+    border-radius: 10px;
+    text-align: center;
+}
+  
+.writer h1 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+  
+.writer p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+  
+.writer input[type="text"],
+.writer input[type="number"],
+.writer input[type="email"] {
+    width: 65%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.writer input[type="text"]:focus,
+.writer input[type="email"]:focus,
+.writer textarea:focus {
+    border: 3px solid #7c7878;
+}
+
+.writer textarea {
+    width: 65%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+  
+.writer input[type="submit"] {
+    width: 68%;
+    padding: 10x;
+    height: 60px;
+    background-color: rgb(246, 230, 229);
+    color: #333;
+    border: 3px solid rgb(246, 230, 229);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+  
+.writer input[type="submit"]:hover {
+    background-color: transparent;
+    border: 3px solid rgb(246, 230, 229);
+
+}
+
+.logo {
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+}
+
+.logo img{
+    width: 60%;
+}
+
+.header h1{
+    letter-spacing: 2;
+    font-size: 40px;
+}
+
+nav {
+    padding: 10px;
+}
+  
+.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav li {
+    width: 14.2857%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav li:nth-child(4) {
+    background-color: rgb(246, 230, 229);
+}
+
+.nav a {
+    display: block;
+    padding: 10px 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 350ms ease-in-out;
+}
+  
+.nav a:hover {
+    background-color: rgb(246, 230, 229);
+}
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease; 
+    z-index: 1;
+}
+
+.scroll-to-top-btn.show {
+    display: block;
+}
+
+.scroll-to-top-btn:hover {
+    transform: scale(1.3); 
+}
+
+.footer {
+    width: 100%;
+    font-family: 'Syne', sans-serif;
+    color: black;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    height: auto;
+    text-align: center;
+    display: flex;
+}
+
+.footer p {
+    font-size: 150%;
+    width: calc(100% - 20%);
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media img {
+    width: 10%;
+    min-width: 25px;
+    margin: 0 6px;
+    transition: transform 0.3s ease; 
+    object-fit: contain;
+}
+
+.social-media img:hover {
+    cursor: pointer;
+    transform: scale(1.2); 
+}
